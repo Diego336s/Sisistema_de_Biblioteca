@@ -197,7 +197,7 @@
                                 Prestamo prestamo = administrador.crearPrestamo(idLibro, prestatario, documento, diasPrestamo);
 
                                 if (prestamo != null) {
-                                    response.sendRedirect("listarLibroParaPrestar.jsp");
+                                    response.sendRedirect("regresarLibro.jsp");
                                     return;
                                 } else {
                                     %>
