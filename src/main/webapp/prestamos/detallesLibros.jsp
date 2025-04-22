@@ -211,7 +211,7 @@
                             accesoValue = libroReferencia.getAcceso();
                         }
                     %>
-                    
+
                     <div  class="row">
                         <div class="col-md-6">
                             <p><b>Nombre: </b> <%=  libro.getNombre()%></p>
@@ -242,10 +242,12 @@
                         </div>
 
 
-                        
+
                         <div class="col-12 centrar">
-                            
-                                <a href="listarLibroParaPrestar.jsp" class="btn btn-primary">Volver</a>
+                            <a href="crearPrestamo.jsp?id=<%= libro.getId()%>" class="btn btn-success me-2">
+                                Prestar
+                            </a>
+                            <a href="listarLibroParaPrestar.jsp" class="btn btn-primary">Volver</a>
                         </div>
                     </div>
                     <div class="col-md-3"></div>
